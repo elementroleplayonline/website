@@ -80,7 +80,7 @@ body {
 }
 
 #hamburger {
-  background-image: url("./Images/icons8-hamburger-menu-48.png");
+  background-image: url("./Resources/Images/icons8-hamburger-menu-48.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
@@ -104,7 +104,7 @@ body {
 #wrapper {
   width: 100%;
   height: 500px;
-  background-image: url("./Images/background.jpg");
+  background-image: url("./Resources/Images/background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
