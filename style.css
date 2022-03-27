@@ -176,7 +176,19 @@ body {
   }
 
   #wrapper h1 {
-    padding: 125px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 57.5px;
+    padding-bottom: 5px;
+  }
+
+  #wrapper button {
+    margin-top: 5px;
+    margin-bottom: 57.5px;
+  }
+
+  #wrapper {
+    height: 30%;
   }
 
   #nav-ol {
