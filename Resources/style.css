@@ -19,11 +19,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #navigation img {
   width: 300px;
   height: 65px;
+  padding: 5px 0px 0px 0px;
   margin-right: 50px;
 }
 
@@ -50,6 +52,21 @@ body {
 
 #navigation li a:hover {
   box-shadow: 0px 2px 0px #fff;
+}
+
+#hamburger {
+  background-image: url("./Images/icons8-hamburger-menu-48.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  height: 32px;
+  width: 32px;
+  display: none;
+  border: none;
+}
+
+#hamburger:hover {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Main */
@@ -125,4 +142,31 @@ body {
 
 #copyright {
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  #navigation img {
+    width: 200px;
+    height: 43.33px;
+  }
+
+  #wrapper h1 {
+    padding: 125px 5px;
+  }
+
+  #nav-ol {
+    display: none;
+  }
+
+  #nav-ol li a {
+    font-size: 85%;
+  }
+
+  #nav-ol.show {
+    display: flex;
+  }
+
+  #hamburger {
+    display: block;
+  }
 }
