@@ -62,7 +62,7 @@ body {
 #wrapper {
   width: 100%;
   height: 500px;
-  background-image: url("/Users/tgpapercompany/Documents/Element RP/Website/Resources/Images/background.jpg");
+  background-image: url("https://github.com/elementroleplayonline/website/blob/main/Resources/Images/background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
