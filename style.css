@@ -26,13 +26,13 @@ body {
 #login {
   border: none;
   background-color: transparent;
-  text-decoration: underline;
   color: #fff;
 }
 
 #login:hover {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
 }
 
 /* Navigation */
@@ -40,7 +40,7 @@ body {
   background-color: #55baff;
   width: 100%;
   height: 100px;
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,6 +101,73 @@ body {
   justify-content: center;
 }
 
+#about-main {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 700px;
+  width: 100%;
+}
+
+#about-main h1 {
+  padding-top: 20px;
+  margin: 0%;
+}
+
+#about-main h1,
+p {
+  text-align: center;
+}
+
+#apply-main h1 {
+  padding-top: 20px;
+  margin: 0%;
+}
+
+#apply-main {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 700px;
+  width: 100%;
+}
+
+#apply-main iframe {
+  height: 1320px;
+  width: 100%;
+}
+
+#apply-main h1,
+p {
+  text-align: center;
+}
+
+#rules-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#rules-main h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#rules-main h3 {
+  width: 100%;
+  text-align: center;
+}
+
+#rule-text {
+  width: 60%;
+  text-align: left;
+  margin: auto;
+}
+
 #wrapper {
   width: 100%;
   height: 500px;
@@ -108,7 +175,13 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+#wrapper-box {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #wrapper h1 {
@@ -117,9 +190,8 @@ body {
   color: white;
 }
 
-#wrapper button {
-  width: 175px;
-  height: 50px;
+#wrapper a {
+  padding: 10px 50px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 400;
@@ -129,9 +201,10 @@ body {
   background-color: #71caff;
   color: black;
   box-shadow: 0px 2px 2px gray;
+  text-decoration: none;
 }
 
-#wrapper button:hover {
+#wrapper a:hover {
   box-shadow: 5px 5px 3px #000;
   text-shadow: 3px 3px 1px #000;
   background-color: rgba(0, 0, 0, 0);
@@ -140,12 +213,34 @@ body {
 }
 
 #updates {
-  padding-top: 20px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.update-content {
+  display: inline-block;
+  width: 100%;
+  min-height: 0;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-content h3,
+p {
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .update {
-  border: solid gray 1px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: dashed gray 2px;
+  flex-basis: 80%;
 }
 
 #update-title {
@@ -176,19 +271,8 @@ body {
   }
 
   #wrapper h1 {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 57.5px;
-    padding-bottom: 5px;
-  }
-
-  #wrapper button {
-    margin-top: 5px;
-    margin-bottom: 57.5px;
-  }
-
-  #wrapper {
-    height: 30%;
+    padding: 125px 0px;
+    font-size: 40px;
   }
 
   #nav-ol {
@@ -205,5 +289,13 @@ body {
 
   #hamburger {
     display: block;
+  }
+
+  #apply-main iframe {
+    height: 1338px;
+    width: 100%;
+  }
+  #update-title {
+    text-align: center;
   }
 }
